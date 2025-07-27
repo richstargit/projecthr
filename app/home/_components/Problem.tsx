@@ -53,24 +53,21 @@ export default function ProblemCarousel() {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+      breakpoint: 1280, // Desktop ขึ้นไป
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+      {
+        breakpoint: 768, // จอ <= 768px (iPad แนวตั้ง และ tablet อื่น ๆ)
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1
-        }
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 640, // มือถือทั่วไป
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
