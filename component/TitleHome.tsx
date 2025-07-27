@@ -1,7 +1,9 @@
 
+import { GoArrowDown } from "react-icons/go";
+
 export default function TitleHome() {
   return (
-    <section className="h-120 flex items-center justify-center">
+    <section className="h-screen flex items-center justify-center">
       <div className="max-w-4xl text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-slate-900">
           Hirenz
@@ -13,6 +15,11 @@ export default function TitleHome() {
           <a href="https://hire-sight-demo.vercel.app/" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition">
             Try Now
           </a>
+        </div>
+        <div className="mt-30 flex justify-center">
+          <div className="flex items-center animate-bounce justify-center w-12 h-12 rounded-full shadow-xl">
+            <GoArrowDown className="text-2xl" />
+          </div>
         </div>
       </div>
     </section>

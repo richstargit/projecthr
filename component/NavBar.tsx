@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 export default function Navbar() {
   const navLinks = [
     { name: "Home", path: "#" },
-    { name: "About", path: "#about" },
+    { name: "Problem", path: "#problem" },
     { name: "Product", path: "#product" },
     { name: "Contact", path: "#contact" },
   ];
