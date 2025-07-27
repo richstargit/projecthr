@@ -14,10 +14,6 @@ export default function TitleHome() {
             Try Now
           </a>
         </div>
-        {/* หากมีภาพ mockup */}
-        {/* <div className="mt-10">
-          <img src="/mockup.png" alt="App Mockup" className="mx-auto w-full max-w-md rounded-lg shadow-lg" />
-        </div> */}
       </div>
     </section>
   )
