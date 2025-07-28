@@ -21,7 +21,7 @@ export default function ProblemCarousel() {
     },
     {
       subject: 'Problem 3',
-      detail: 'ผู้สมัครต้องเดินทางไปสัมภาษณ์ เสียเวลาและค่าใช้จ่าย',
+      detail: 'ผู้สมัครต้องเดินทางไปสัมภาษณ์ เสียเวลาและค่าใช้จ่ายผู้สมัครต้องเดินทางไปสัมภาษณ์ เสียเวลาและค่าใช้จ่ายผู้สมัครต้องเดินทางไปสัมภาษณ์ เสียเวลาและค่าใช้จ่ายผู้สมัครต้องเดินทางไปสัมภาษณ์ เสียเวลาและค่าใช้จ่ายผู้สมัครต้องเดินทางไปสัมภาษณ์ เสียเวลาและค่าใช้จ่ายผู้สมัครต้องเดินทางไปสัมภาษณ์ เสียเวลาและค่าใช้จ่ายผู้สมัครต้องเดินทางไปสัมภาษณ์ เสียเวลาและค่าใช้จ่าย',
       img: 'https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp',
     },
     {
@@ -79,9 +79,9 @@ export default function ProblemCarousel() {
   return (
     <section id="problem" className="py-16 bg-gray-100">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-slate-900">ปัญหาที่เราพบ</h2>
-        <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-          เราเน้นค้นหาและแก้ปัญหาหลักในการสรรหาและสัมภาษณ์งาน
+        <h2 className="text-4xl font-bold text-slate-900">Problem</h2>
+        <p className="mt-4 text-slate-900 max-w-xl mx-auto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi dolore doloremque laboriosam incidunt dignissimos nisi aspernatur eos fugiat commodi possimus, voluptas, earum animi totam debitis, officiis fugit inventore voluptatum?
         </p>
       </div>
       <div className='flex items-center justify-center gap-4'>
