@@ -2,6 +2,7 @@
 import './globals.css'
 import { ReactNode } from 'react'
 import NavBar from '@/component/NavBar'
+import Contact from '@/component/Contact'
 
 export const metadata = {
   title: 'Hirenz',
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main>
           {children}
         </main>
+        <Contact></Contact>
       </body>
     </html>
   )
