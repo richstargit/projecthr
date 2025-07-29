@@ -21,7 +21,7 @@ export default function Soultion() {
             <div className="overflow-x-hidden">
             <div data-aos="fade-right" className="w-[80%] xl:w-[55%] mx-auto relative mt-5 right-0 lg:right-25"><Cardpicture></Cardpicture></div>
                         <div data-aos="fade-left" className="w-[80%] xl:w-[55%] mx-auto mt-5 relative left-0 lg:left-25"><Cardpicture></Cardpicture></div>
-                        <div data-aos="fade-right" className="w-[80%] xl:w-[55%] mx-auto relative mt-5 right-0 lg:right-25"><Cardpicture></Cardpicture></div>
+                        <div data-aos="fade-right" className="w-[80%] xl:w-[55%] mx-auto relative mt-5 mb-15 right-0 lg:right-25"><Cardpicture></Cardpicture></div>
             </div>
 
         </section>

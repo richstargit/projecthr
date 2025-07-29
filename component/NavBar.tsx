@@ -1,6 +1,5 @@
 'use client'; // ถ้าใช้ Next.js App Router
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Navbar() {
   const navLinks = [
@@ -11,6 +10,7 @@ export default function Navbar() {
   ];
 
   const [activeSection, setActiveSection] = useState('');
+  const targetRef = useRef('');
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -18,16 +18,25 @@ export default function Navbar() {
       const scrollY = window.scrollY;
 
       const sections = navLinks.map(link => {
-        if (link.path === "#") return null;
+        if (link.path === "#") {
+          return;
+        };
         const el = document.querySelector(link.path);
         if (!el) return null;
 
         const top = el.getBoundingClientRect().top + window.scrollY;
         return { id: link.path, top };
       }).filter(Boolean);
-      const current = sections.findLast(section => scrollY >= section!.top - 250);
-      if (current) setActiveSection(current.id);
-      else setActiveSection('#')
+      let current = sections.findLast(section => scrollY >= section!.top - 250);
+      if(!current){
+        current = {id:"#",top:1}
+      }
+
+      if (targetRef.current && current.id !== targetRef.current) {
+        return;
+      }
+      targetRef.current = '';
+      setActiveSection(current.id);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -54,7 +63,9 @@ export default function Navbar() {
                 activeSection === link.path ? 'bg-slate-900 text-white rounded-md' : ''
               }`}
             >
-              <a href={link.path} onClick={() => setActiveSection(link.path)}>
+              <a href={link.path} onClick={() => {
+                  targetRef.current = link.path;
+                  setActiveSection(link.path)}}>
                 {link.name}
               </a>
             </li>
@@ -92,7 +103,9 @@ export default function Navbar() {
                   activeSection === link.path ? 'bg-slate-900 text-white rounded-md' : ''
                 }`}
               >
-                <a href={link.path} onClick={() => setActiveSection(link.path)}>
+                <a href={link.path} onClick={() => {
+                  targetRef.current = link.path;
+                  setActiveSection(link.path)}}>
                   {link.name}
                 </a>
               </li>
