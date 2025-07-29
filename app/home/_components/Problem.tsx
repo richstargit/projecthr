@@ -1,10 +1,12 @@
 'use client'
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";
-
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 export default function ProblemCarousel() {
   const sliderRef = useRef<any>(null);
 
@@ -84,41 +86,37 @@ export default function ProblemCarousel() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi dolore doloremque laboriosam incidunt dignissimos nisi aspernatur eos fugiat commodi possimus, voluptas, earum animi totam debitis, officiis fugit inventore voluptatum?
         </p>
       </div>
-      <div className='flex items-center justify-center gap-4'>
-        <button
-          onClick={() => sliderRef.current?.slickPrev()}
-          className="bg-white shadow-lg rounded-full flex w-12 h-12 items-center justify-center cursor-pointer"
-        >
-          <GoArrowLeft size={24} />
-        </button>
-        <div className="slider-container w-3/4">
-          <Slider ref={sliderRef} {...settings}>
-            {problemList.map((item, idx) => (
-              <div key={idx} className='p-5'>
+      
+      <Carousel
+      opts={{
+        align: "start",
+        loop: true
+      }}
+      className="w-[80%] lg:w-[70%] m-auto"
+    >
+      <CarouselContent>
+        {problemList.map((item, idx) => (
+          <CarouselItem key={idx} className="md:basis-1/2 xl:basis-1/3">
+            <div key={idx} className='p-5'>
                 <div className="card bg-base-100 shadow-lg my-8">
                   <figure className="h-60 overflow-hidden">
                     <img
                       src={item.img}
                       alt={item.subject} className="w-full h-full object-cover" />
                   </figure>
-                  <div className="card-body h-80">
+                  <div className="card-body h-60 lg:h-80">
                     <h2 className="card-title">{item.subject}</h2>
                     <p>{item.detail}</p>
                   </div>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
-        <div>
-          <button
-        onClick={() => sliderRef.current?.slickNext()}
-        className="bg-white shadow-lg rounded-full w-12 h-12 flex items-center justify-center cursor-pointer"
-      >
-        <GoArrowRight size={24} />
-      </button>
-        </div>
-      </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+
     </section>
   )
 }

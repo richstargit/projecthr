@@ -1,6 +1,6 @@
 export default function Cardpicture() {
   return (
-    <div className="flex flex-col lg:flex-row w-full border-2 shadow-lg rounded-xl min-h-120">
+    <div className="flex flex-col lg:flex-row w-full border-2 shadow-lg rounded-xl lg:min-h-120 min-h-50">
       <div className="md:basis-[40%] w-full">
         <img src="/image/C_mainpage.png" alt="" className="object-cover h-full p-2" />
       </div>
