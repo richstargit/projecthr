@@ -9,7 +9,7 @@ export default function TitleHome() {
           Hirenz
         </h1>
         <p className="mt-6 text-lg md:text-xl text-slate-900">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptates mollitia, ab officiis ea impedit maiores nostrum ducimus fugiat amet reprehenderit at pariatur. Sed quam harum illum similique incidunt nam!
+          An AI-powered digital hiring platform, crafted for forward-thinking HR teams that value speed, accuracy, and smart decision-making.
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <a href="https://hire-sight-demo.vercel.app/" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-xl">
