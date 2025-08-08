@@ -12,13 +12,13 @@ export default function TitleHome() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptates mollitia, ab officiis ea impedit maiores nostrum ducimus fugiat amet reprehenderit at pariatur. Sed quam harum illum similique incidunt nam!
         </p>
         <div className="mt-8 flex justify-center space-x-4">
-          <a href="https://hire-sight-demo.vercel.app/" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition">
+          <a href="https://hire-sight-demo.vercel.app/" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-xl">
             Try Now
           </a>
         </div>
         <div className="mt-30 flex justify-center">
           <div className="flex items-center animate-bounce justify-center w-12 h-12 rounded-full shadow-xl">
-            <GoArrowDown className="text-2xl" />
+            <a href="#problem"><GoArrowDown className="text-2xl" /></a>
           </div>
         </div>
       </div>

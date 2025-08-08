@@ -46,7 +46,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar bg-base-100 shadow-lg w-[98%] m-auto mt-4 mb-4 rounded-lg sticky top-1 z-50 relative">
+    <nav className="navbar shadow-lg bg-white w-[98%] top-5 m-auto mb-4 rounded-lg sticky top-1 z-50 relative">
       <div className="flex-1">
         <a href="#" className="font-semibold text-xl rounded-md ml-5">
           HIRENZ
@@ -94,7 +94,7 @@ export default function Navbar() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="md:hidden absolute left-0 right-0 top-full mt-2 bg-base-100 rounded-lg shadow p-2">
+        <div className="md:hidden absolute left-0 right-0 top-full mt-2 rounded-lg shadow p-2">
           <ul className="menu menu-vertical text-base font-medium">
             {navLinks.map((link, index) => (
               <li
