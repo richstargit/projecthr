@@ -99,7 +99,7 @@ export default function ProblemCarousel() {
         align: "start",
         loop: true
       }}
-      className="w-[80%] lg:w-[70%] m-auto"
+      className="w-[90%] lg:w-[70%] m-auto"
     >
       <CarouselContent>
         {problemList.map((item, idx) => (
@@ -120,8 +120,8 @@ export default function ProblemCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="left-0 opacity-50 md:opacity-100 md:left-[-25]" />
+      <CarouselNext className="right-0 opacity-50 md:opacity-100 md:right-[-25]" />
     </Carousel>
 
     </section>
