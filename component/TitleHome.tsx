@@ -13,7 +13,7 @@ export default function TitleHome() {
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <a href="https://hire-sight-demo.vercel.app/" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-xl">
-            Try Now
+            Try Demo
           </a>
         </div>
         <div className="mt-30 flex justify-center">

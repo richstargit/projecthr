@@ -14,36 +14,85 @@ export default function ProblemCarousel() {
     {
       subject: 'Submit Resume',
       detail: 'Candidates must submit their resumes and wait indefinitely for HR to respond.',
-      img: 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
+      img: '/image/submitProblem.png',
     },
     {
       subject: 'HR screening',
       detail: 'The more resumes HR has to review manually, the harder it becomes to stay focused and great candidates might never even get noticed.',
-      img: 'https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp',
+      img: '/image/HRProblem.png',
     },
     {
       subject: 'Interviews',
-      detail: 'Interviewing is not just about asking questions it’s about listening, analyzing, and making judgments on the spot. When HR teams are tired or overwhelmed, even the best candidates might not get a fair assessment.',
-      img: 'https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp',
+      detail: 'Interviewing is not just about asking questions. It’s about listening, analyzing, and making judgments on the spot. When HR teams are tired or overwhelmed, even the best candidates might not get a fair assessment.',
+      img: '/image/InterviewProblem.png',
     },
     {
-      subject: 'Problem 4',
-      detail: 'ผู้สมัครต้องยื่น Resume และรอ HR เรียกโดยไม่มีกำหนดเวลา',
-      img: 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
+      subject: 'Submit Resume',
+      detail: 'Candidates must submit their resumes and wait indefinitely for HR to respond.',
+      img: '/image/submitProblem.png',
+    },
+    {
+      subject: 'HR screening',
+      detail: 'The more resumes HR has to review manually, the harder it becomes to stay focused and great candidates might never even get noticed.',
+      img: '/image/HRProblem.png',
+    },
+    {
+      subject: 'Interviews',
+      detail: 'Interviewing is not just about asking questions. It’s about listening, analyzing, and making judgments on the spot. When HR teams are tired or overwhelmed, even the best candidates might not get a fair assessment.',
+      img: '/image/InterviewProblem.png',
     },
   ]
 
   return (
     <section id="problem" className="py-16 bg-gray-100">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-slate-900">Problem</h2>
-        <p className="mt-4 text-slate-900 max-w-xl mx-auto">
-          Today's hiring 
-          <br />36% of candidates wait 1-2 months for HR response
-          <br />75% of applicants never hear back after applying
-          <br />Recruiters scan resumes in 6-8 seconds while handling 200+ applicants per job
-        </p>
-      </div>
+  <h2 className="text-4xl font-bold text-slate-900 mb-6">Problem</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+    <div className="p-6 bg-white shadow-lg rounded-2xl flex flex-col h-full">
+      <p className="text-5xl font-bold">36%</p>
+      <p className="mt-2 text-slate-700">of candidates wait 1–2 months just to hear from HR</p>
+      <a
+    href="https://www.jobscore.com/articles/candidate-experience-statistics"
+    target="_blank"
+    className="mt-auto block text-xs text-slate-400 hover:text-slate-600 underline"
+  >
+    Source: JobScore, “Candidate Experience Statistics You Must Know in 2025”
+  </a>
+    </div>
+    <div className="p-6 bg-white shadow-lg rounded-2xl flex flex-col h-full">
+      <p className="text-5xl font-bold">75%</p>
+      <p className="mt-2 text-slate-700">never hear back after applying</p>
+      <a
+    href="https://www.prnewswire.com/news-releases/seventy-five-percent-of-workers-who-applied-to-jobs-through-various-venues-in-the-last-year-didnt-hear-back-from-employers-careerbuilder-survey-finds-191990281.html"
+    target="_blank"
+    className="mt-auto block text-xs text-slate-400 hover:text-slate-600 underline"
+  >
+    Source: CareerBuilder nationwide survey (PR Newswire), “Seventy-Five Percent of Workers… Didn’t Hear Back”
+  </a>
+    </div>
+    <div className="p-6 bg-white shadow-lg rounded-2xl flex flex-col h-full">
+  <p className="text-5xl font-bold">200+</p>
+  <p className="mt-2 text-slate-700">
+    applicants per job and recruiters spend only 6–8 seconds scanning each resume
+  </p>
+  <a
+    href="https://www.bu.edu/com/files/2018/10/TheLadders-EyeTracking-StudyC2.pdf"
+    target="_blank"
+    className="mt-auto block text-xs text-slate-400 hover:text-slate-600 underline"
+  >
+    Source: Boston University
+  </a>
+  <a
+    href="https://www.inc.com/peter-economy/19-interesting-hiring-statistics-you-should-know.html"
+    target="_blank"
+    className="mt-auto block text-xs text-slate-400 hover:text-slate-600 underline"
+  >
+    Source: Inc.com
+  </a>
+</div>
+  </div>
+</div>
+
       
       <Carousel
       opts={{
