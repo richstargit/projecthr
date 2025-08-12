@@ -94,7 +94,7 @@ export default function Navbar() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="md:hidden absolute left-0 right-0 top-full mt-2 rounded-lg shadow p-2">
+        <div className="bg-white md:hidden absolute left-0 right-0 top-full mt-2 rounded-lg shadow p-2">
           <ul className="menu menu-vertical text-base font-medium">
             {navLinks.map((link, index) => (
               <li
