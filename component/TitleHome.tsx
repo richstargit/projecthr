@@ -5,6 +5,7 @@ export default function TitleHome() {
   return (
     <section className="h-screen flex items-center justify-center">
       <div className="max-w-4xl text-center">
+        <img src="/image/icon.png" alt="HIRENZ logo" className="mx-auto mb-2 h-50 w-50" />
         <h1 className="text-5xl md:text-6xl font-bold text-slate-900">
           Hirenz
         </h1>
@@ -12,8 +13,8 @@ export default function TitleHome() {
           An AI-powered digital hiring platform, crafted for forward-thinking HR teams that value speed, accuracy, and smart decision-making.
         </p>
         <div className="mt-8 flex justify-center space-x-4">
-          <a href="https://hire-sight-demo.vercel.app/" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-xl">
-            Try Demo
+          <a href="#contact" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-xl">
+            Request Demo
           </a>
         </div>
         <div className="mt-30 flex justify-center">

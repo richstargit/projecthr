@@ -40,8 +40,8 @@ export default function Soultion() {
             <h2 className="text-4xl font-bold text-slate-900 text-center">Hirenz</h2>
             <img className="w-[98%] lg:w-[60%] object-cover mx-auto mt-5 rounded-xl shadow-xl mb-15" src="/image/C_mainpage.png" />
             <div className="flex justify-center mt-5 mb-5">
-                <a href="https://hire-sight-demo.vercel.app/" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-xl">
-            Try Demo
+                <a href="#contact" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-xl">
+            Request Demo
           </a>
             </div>
             <div className="overflow-x-hidden">

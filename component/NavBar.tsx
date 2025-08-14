@@ -48,7 +48,8 @@ export default function Navbar() {
   return (
     <nav className="navbar shadow-lg bg-white w-[98%] top-5 m-auto mb-4 rounded-lg sticky top-1 z-50 relative">
       <div className="flex-1">
-        <a href="#" className="font-semibold text-xl rounded-md ml-5">
+        <a href="#" className="font-semibold text-2xl rounded-md ml-5 flex gap-3 items-center">
+          <img src="/image/icon.png" alt="HIRENZ logo" className="w-10 h-10" />
           HIRENZ
         </a>
       </div>
