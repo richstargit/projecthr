@@ -17,7 +17,7 @@ export default function ProblemCarousel() {
       img: '/image/submitProblem.png',
     },
     {
-      subject: 'HR screening',
+      subject: 'HR-Screening',
       detail: 'The more resumes HR has to review manually, the harder it becomes to stay focused and great candidates might never even get noticed.',
       img: '/image/HRProblem.png',
     },
@@ -27,26 +27,16 @@ export default function ProblemCarousel() {
       img: '/image/InterviewProblem.png',
     },
     {
-      subject: 'Submit Resume',
-      detail: 'Candidates must submit their resumes and wait indefinitely for HR to respond.',
-      img: '/image/submitProblem.png',
-    },
-    {
-      subject: 'HR screening',
-      detail: 'The more resumes HR has to review manually, the harder it becomes to stay focused and great candidates might never even get noticed.',
-      img: '/image/HRProblem.png',
-    },
-    {
-      subject: 'Interviews',
-      detail: 'Interviewing is not just about asking questions. It’s about listening, analyzing, and making judgments on the spot. When HR teams are tired or overwhelmed, even the best candidates might not get a fair assessment.',
-      img: '/image/InterviewProblem.png',
+      subject: 'Hiring decision',
+      detail: 'Even with all resumes reviewed and interviews completed, making the final hiring decision can be difficult. Inconsistent evaluations, limited insights, or overwhelming candidate pools can lead to delays, missed opportunities, or selecting the wrong candidate.',
+      img: '/image/hrdecision.png',
     },
   ]
 
   return (
     <section id="problem" className="py-16 bg-gray-100">
       <div className="text-center mb-12">
-  <h2 className="text-4xl font-bold text-[#274254] mb-6">Problem</h2>
+  <h2 className="text-4xl font-bold text-[#274254] mb-6">Why today’s hiring is fail</h2>
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
     <div className="p-6 bg-white shadow-lg rounded-2xl flex flex-col h-full">
       <p className="text-5xl font-bold text-[#274254]">36%</p>
@@ -93,11 +83,11 @@ export default function ProblemCarousel() {
   </div>
 </div>
 
+    <h2 className="text-4xl mt-25 font-bold text-[#274254] text-center">Today’s Hiring journey</h2>
       
       <Carousel
       opts={{
         align: "start",
-        loop: true
       }}
       className="w-[90%] lg:w-[70%] m-auto"
     >

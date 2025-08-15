@@ -14,8 +14,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
+
     const handleScroll = () => {
       const scrollY = window.scrollY;
+
 
       const sections = navLinks.map(link => {
         if (link.path === "#") {
@@ -24,7 +26,7 @@ export default function Navbar() {
         const el = document.querySelector(link.path);
         if (!el) return null;
 
-        const top = el.getBoundingClientRect().top + window.scrollY;
+        const top = el.getBoundingClientRect().top + window.scrollY+(link.path==="#contact"?-500:0);
         return { id: link.path, top };
       }).filter(Boolean);
       let current = sections.findLast(section => scrollY >= section!.top - 250);
