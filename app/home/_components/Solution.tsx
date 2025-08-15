@@ -35,12 +35,12 @@ export default function Soultion() {
     return (
         <section id="product" className="mt-32 mb-32">
             <div className="text-center mb-12">
-                <h1 className="text-5xl font-bold text-slate-900">Product</h1>
+                <h1 className="text-5xl font-bold text-[#274254]">Product</h1>
             </div>
-            <h2 className="text-4xl font-bold text-slate-900 text-center">Hirenz</h2>
-            <img className="w-[98%] lg:w-[60%] object-cover mx-auto mt-5 rounded-xl shadow-xl mb-15" src="/image/C_mainpage.png" />
+            <h2 className="text-4xl font-bold text-[#274254] text-center">Hirenz</h2>
+            <img className="w-[98%] lg:w-[60%] object-cover mx-auto mt-5 rounded-xl shadow-xl mb-15" src="/image/preview.gif" />
             <div className="flex justify-center mt-5 mb-5">
-                <a href="#contact" className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-xl">
+                <a href="#contact" className="bg-[#274254] text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-xl">
             Request Demo
           </a>
             </div>

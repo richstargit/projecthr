@@ -61,7 +61,7 @@ export default function Navbar() {
             <li
               key={index}
               className={`mr-5 ${
-                activeSection === link.path ? 'bg-slate-900 text-white rounded-md' : ''
+                activeSection === link.path ? 'bg-[#274254] text-white rounded-md' : ''
               }`}
             >
               <a href={link.path} onClick={() => {
@@ -101,7 +101,7 @@ export default function Navbar() {
               <li
                 key={index}
                 className={`${
-                  activeSection === link.path ? 'bg-slate-900 text-white rounded-md' : ''
+                  activeSection === link.path ? 'bg-[#274254] text-white rounded-md' : ''
                 }`}
               >
                 <a href={link.path} onClick={() => {

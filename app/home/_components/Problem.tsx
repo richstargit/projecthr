@@ -46,10 +46,10 @@ export default function ProblemCarousel() {
   return (
     <section id="problem" className="py-16 bg-gray-100">
       <div className="text-center mb-12">
-  <h2 className="text-4xl font-bold text-slate-900 mb-6">Problem</h2>
+  <h2 className="text-4xl font-bold text-[#274254] mb-6">Problem</h2>
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
     <div className="p-6 bg-white shadow-lg rounded-2xl flex flex-col h-full">
-      <p className="text-5xl font-bold">36%</p>
+      <p className="text-5xl font-bold text-[#274254]">36%</p>
       <p className="mt-2 text-slate-700">of candidates wait 1–2 months just to hear from HR</p>
       <a
     href="https://www.jobscore.com/articles/candidate-experience-statistics"
@@ -60,7 +60,7 @@ export default function ProblemCarousel() {
   </a>
     </div>
     <div className="p-6 bg-white shadow-lg rounded-2xl flex flex-col h-full">
-      <p className="text-5xl font-bold">75%</p>
+      <p className="text-5xl font-bold text-[#274254]">75%</p>
       <p className="mt-2 text-slate-700">never hear back after applying</p>
       <a
     href="https://www.prnewswire.com/news-releases/seventy-five-percent-of-workers-who-applied-to-jobs-through-various-venues-in-the-last-year-didnt-hear-back-from-employers-careerbuilder-survey-finds-191990281.html"
@@ -71,7 +71,7 @@ export default function ProblemCarousel() {
   </a>
     </div>
     <div className="p-6 bg-white shadow-lg rounded-2xl flex flex-col h-full">
-  <p className="text-5xl font-bold">200+</p>
+  <p className="text-5xl font-bold text-[#274254]">200+</p>
   <p className="mt-2 text-slate-700">
     applicants per job and recruiters spend only 6–8 seconds scanning each resume
   </p>
