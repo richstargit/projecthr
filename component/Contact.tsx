@@ -12,8 +12,8 @@ export default function Contact() {
                 <div className="w-full lg:w-2/4 flex items-center justify-center">
                     <div className="flex items-center gap-4 text-lg">
                         <FaEnvelope className="text-xl" />
-                        <a href="" className="hover:underline">
-                            example@example.com
+                        <a href="mailto:hirenz.kmutnb@gmail.com" className="hover:underline">
+                            hirenz.kmutnb@gmail.com
                         </a>
                     </div>
                 </div>
