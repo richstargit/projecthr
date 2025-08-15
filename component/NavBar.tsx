@@ -68,7 +68,8 @@ export default function Navbar() {
             >
               <a href={link.path} onClick={() => {
                   targetRef.current = link.path;
-                  setActiveSection(link.path)}}>
+                  setActiveSection(link.path)}}
+                  className='rounded-md '>
                 {link.name}
               </a>
             </li>
