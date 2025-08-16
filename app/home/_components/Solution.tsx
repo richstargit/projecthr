@@ -18,9 +18,9 @@ export default function Soultion() {
             detail: "The AI system accurately matches candidates' resumes with the job requirements by instantly assessing their suitability. Users can easily upload their resumes for evaluation. This enables faster and more efficient candidate screening, reducing the workload of HR personnel in manually reviewing resumes."
         },
         {
-            title: "Auto-Scheduling",
+            title: "Interview Scheduling",
             image: "/image/C_interview.png",
-            detail: "The system automatically schedules virtual interviews for each candidate, eliminating the need for manual coordination and allowing HR teams to focus more on evaluating candidate quality."
+            detail: "Candidates can quickly book an interview slot that fits their schedule."
         },
         {
             title: "AI Virtual Interviews",
